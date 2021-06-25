@@ -1,10 +1,10 @@
-import { CloneMe } from '../../components/CloneMe';
-import Styled from './styles';
+import { CloneMe } from '../../components/CloneMe'
+import * as Styled from './styles'
 
 export function Home() {
   return (
-      <Styled.Wrapper>
-        <<CloneMe title="Clone-me" />
-      </Styled.Wrapper>
-    );
+    <Styled.Wrapper>
+      <CloneMe title="Clone-me" />
+    </Styled.Wrapper>
+  );
 }

@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
-import { renderTheme } from "../../styles/render-theme"
-import {CloneMe} from '.';
+import { CloneMe } from '.';
+import { renderTheme } from '../../styles/render-theme';
 
 describe('<CloneMe />', () => {
-  interface('should render', () => {
+  it('should render', () => {
     renderTheme(<CloneMe />);
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
