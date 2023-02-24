@@ -1,10 +1,10 @@
 import { screen } from '@testing-library/react';
-import { CloneMe } from '.';
+import { Slider } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
 describe('<CloneMe />', () => {
   it('should render', () => {
-    renderTheme(<CloneMe />);
+    renderTheme(<Slider />);
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
 });
